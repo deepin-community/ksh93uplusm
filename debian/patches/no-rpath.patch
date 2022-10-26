@@ -1,0 +1,15 @@
+Description: Disable rpath
+Author: Nicholas Bamber <nicholas@periapt.co.uk>
+Forwarded: not-needed
+
+--- a/src/cmd/INIT/make.probe
++++ b/src/cmd/INIT/make.probe
+@@ -2068,7 +2068,7 @@ CC_LD=$ld
+ CC_LD_DYNAMIC=$lddynamic
+ CC_LD_LAZY=$ldlazy
+ CC_LD_NOLAZY=$ldnolazy
+-CC_LD_ORIGIN=$ldorigin
++CC_LD_ORIGIN=
+ CC_LD_RECORD=$ldrecord
+ CC_LD_NORECORD=$ldnorecord
+ CC_LD_RUNPATH=$ldrunpath
